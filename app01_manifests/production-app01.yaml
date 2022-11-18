@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: ssh://git@github.com:Thinnesen/tradingaps_manifest.git
+    repoURL: git@github.com:Thinnesen/tradingaps-manifest.git
     targetRevision: HEAD
     path: app01_manifests/production/
     directory:
