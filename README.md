@@ -1,2 +1,2 @@
 # tradingaps-manifest
-Manifest Source of Truth repository test
+Manifest Source of Truth repository
