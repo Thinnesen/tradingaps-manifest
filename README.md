@@ -1,3 +1,3 @@
 # tradingaps-manifest
 Manifest Source of Truth repository
-![alt text](https://imgur.com/a/ojXTi06)
+![image](https://user-images.githubusercontent.com/92097991/202725649-6b9f224a-bc4b-4995-8dff-a2f98ebe2207.png)
