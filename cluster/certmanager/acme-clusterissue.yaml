@@ -1,0 +1,21 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: acme-issuer
+spec:
+  acme:
+
+    email: thinnesen00@gmail.com
+    server: https://acme-v02.api.letsencrypt.org/directory
+    # STAGING! - til test af apps: https://acme-staging-v02.api.letsencrypt.org/directory
+
+    privateKeySecretRef:
+      name: example-issuer-account-key
+    solvers:
+
+    - dns01:
+        cloudflare:
+          email: thinnesen00@gmail.com
+          apiKeySecretRef:
+            name: cloudflare-api-key-secret
+            key: api-key

@@ -15,3 +15,7 @@ spec:
             name: app01-service
             port: 
               number: 80
+  tls:
+  - hosts:
+      - app01.tradingaps.com
+    secretName: app01
