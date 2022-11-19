@@ -1,0 +1,15 @@
+# Benyttet til interne-ressourcer under PoC
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: internal
+  namespace: metallb-system
+spec:
+  addresses:
+  - 10.255.0.230-10.255.0.240
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: l2advertisement
+  namespace: metallb-system
