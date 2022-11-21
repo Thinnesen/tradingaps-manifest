@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demoapp01
+  labels:
+    app: demoapp01-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demoapp01
+  template:
+    metadata:
+      labels:
+        app: demoapp01
+    spec:
+      containers:
+        - name: demoapp01
+          image: thinnesen/tradingaps_production_demoapp:6
+          initialDelaySeconds: 10
+          periodSecnds: 5
+          timeoutSeconds: 2
