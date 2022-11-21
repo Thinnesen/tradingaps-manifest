@@ -1,19 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: website-production
+  name: staging-website
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: git@github.com:Thinnesen/tradingaps-manifest.git
     targetRevision: HEAD
-    path: manifests_website/staging
+    path: manifests_website/staging/
     directory:
       recurse: false
   destination:
     server: https://kubernetes.default.svc
-    namespace: website-production
+    namespace: staging-website
   syncPolicy:
     automated:
       prune: false
