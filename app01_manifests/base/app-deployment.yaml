@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
         - name: app01
-          image: thinnesen/tradingaps_production:3
+          image: thinnesen/tradingaps_production_demoapp:1
