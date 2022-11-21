@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: git@github.com:Thinnesen/tradingaps-manifest.git
     targetRevision: HEAD
-    path: demoapp_manifests/production/
+    path: manifests_demoapp01/production/
     directory:
       recurse: false
   destination:
