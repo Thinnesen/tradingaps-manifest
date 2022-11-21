@@ -5,3 +5,9 @@ metadata:
 spec:
   replicas: 1
   revisionHistoryLimit: 1
+      spec:
+      containers:
+        - name: demoapp01
+          initialDelaySeconds: 10
+          periodSecnds: 5
+          timeoutSeconds: 2
