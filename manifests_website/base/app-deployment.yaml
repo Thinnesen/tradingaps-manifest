@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app01
+  name: website
   labels:
-    app: app01-deployment
+    app: website-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: app01
+      app: website
   template:
     metadata:
       labels:
-        app: app01
+        app: website
     spec:
       containers:
-        - name: app01
+        - name: website
           image: thinnesen/tradingaps_production:5
