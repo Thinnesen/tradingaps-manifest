@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: testapp
+  labels:
+    name: testapp
+spec:
+  selector:
+    matchLabels:
+      app: testapp
+  serviceName: testapp
+  replicas: 1
+  updateStrategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      name: testapp
+      labels:
+        app: testapp
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: testapp
+          image: tradingaps_production_demoapp:6
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: testapp
+              mountPath: /home/node/app
+      securityContext:
+        fsGroup: 1000
+  volumeClaimTemplates:
+  - metadata:
+      name: testapp
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "rook-cephfs"
+      resources:
+        requests:
+          storage: 2Gi
+                                                                               
