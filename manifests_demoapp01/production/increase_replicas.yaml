@@ -3,5 +3,5 @@ kind: Deployment
 metadata:
   name: demoapp01
 spec:
-  replicas: 3
+  replicas: 1
   revisionHistoryLimit: 1
