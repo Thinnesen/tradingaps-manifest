@@ -10,4 +10,3 @@ resources:
 #  - ssl-certificate.yaml
 patches:
   - increase_replicas.yaml
-  - increase_timeout.yaml
