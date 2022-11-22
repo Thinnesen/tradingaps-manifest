@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
         - name: website
-          image: thinnesen/tradingaps_production_demoapp:8
+          image: thinnesen/tradingaps_production_demoapp:52
