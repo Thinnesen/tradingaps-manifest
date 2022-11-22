@@ -14,7 +14,7 @@ spec:
           service:
             name: demoapp01-service
             port: 
-              number: 5000
+              number: 80
 #  tls:
 #  - hosts:
 #      - demoapp01.tradingaps.com
