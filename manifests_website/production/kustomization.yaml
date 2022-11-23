@@ -8,6 +8,6 @@ resources:
 #  - service-loadbalancer.yaml
   - ingress-resource.yaml
   - ssl-certificate.yaml
-#  - verticalpa.yaml
+#  - vertical_pod_autoscaler.yaml
 patches:
   - increase_replicas.yaml
