@@ -9,6 +9,6 @@ resources:
   - ssl-certificate.yaml
   - verticalpodautoscaler.yaml
 patches:
-#  - increase_replicas.yaml
+  - increase_replicas.yaml
   - increase_hpa.yaml
 
