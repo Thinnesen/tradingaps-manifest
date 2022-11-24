@@ -5,11 +5,11 @@ metadata:
   labels:
     app: website-deployment
 spec:
-  replicas: 1
+#  replicas: 1
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 10
+      maxSurge: 1
       maxUnavailable: 0
   selector:
     matchLabels:
