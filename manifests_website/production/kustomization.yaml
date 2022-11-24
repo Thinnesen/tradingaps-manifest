@@ -5,11 +5,9 @@ bases:
   - ../base
 namePrefix: production-
 resources:
-#  - service-loadbalancer.yaml
   - ingress-resource.yaml
   - ssl-certificate.yaml
   - verticalpodautoscaler.yaml
-#  - horizontalpodautoscaler.yaml
 patches:
   - increase_replicas.yaml
 
