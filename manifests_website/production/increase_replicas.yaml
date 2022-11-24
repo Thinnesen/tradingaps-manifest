@@ -4,15 +4,15 @@ metadata:
   name: website
 spec:
   replicas: 3
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 1
-      maxUnavailable: 0
-      resources:
-        requests:
-          memory: "50Mi"
-          cpu: "30m"
-        limits:
-          memory: "500Mi"
-          cpu: "2000m"
+ # strategy:
+#    type: RollingUpdate
+#    rollingUpdate:
+#      maxSurge: 1
+#      maxUnavailable: 0
+#      resources:
+#        requests:
+#          memory: "50Mi"
+#          cpu: "30m"
+#        limits:
+#          memory: "500Mi"
+#          cpu: "2000m"
