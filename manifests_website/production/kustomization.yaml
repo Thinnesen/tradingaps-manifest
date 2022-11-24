@@ -12,3 +12,4 @@ resources:
 #  - horizontalpodautoscaler.yaml
 patches:
   - increase_replicas.yaml
+  - increase_hpa.yaml
