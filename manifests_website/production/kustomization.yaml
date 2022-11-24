@@ -13,5 +13,3 @@ resources:
 patches:
   - increase_hpa.yaml
   - increase_replicas.yaml
-patchesStrategicMerge:
-#  - "increase_hpa.yaml"
