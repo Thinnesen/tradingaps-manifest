@@ -4,4 +4,15 @@ metadata:
   name: website
 spec:
   replicas: 3
-  revisionHistoryLimit: 1
+  template:
+    metadata:
+      labels:
+        app: website
+    spec:
+      resources:
+        requests:
+          memory: "26Mi"
+          cpu: "25m"
+        limits:
+          memory: "500Mi"
+          cpu: "2000m"
