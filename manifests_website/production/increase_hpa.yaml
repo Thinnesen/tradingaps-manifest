@@ -3,5 +3,5 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: website-hpa
 spec:
-  maxReplicas: 8
+  maxReplicas: 17
   minReplicas: 3
