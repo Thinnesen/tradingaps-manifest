@@ -12,4 +12,4 @@ patches:
   - increase_replicas.yaml
 
 patchesStrategicMerge:
-  - "increase_hpa.yaml"
+  - increase_hpa.yaml
