@@ -10,6 +10,5 @@ resources:
   - verticalpodautoscaler.yaml
 patches:
   - increase_replicas.yaml
-
-patchesStrategicMerge:
   - increase_hpa.yaml
+
