@@ -4,4 +4,4 @@ metadata:
   name: website-hpa
 spec:
   maxReplicas: 8
-  minReplicas: 3
+  minReplicas: 4
