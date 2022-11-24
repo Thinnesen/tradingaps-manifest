@@ -9,6 +9,6 @@ resources:
   - ingress-resource.yaml
   - ssl-certificate.yaml
   - verticalpodautoscaler.yaml
- # - horizontalpodautoscaler.yaml
+  - horizontalpodautoscaler.yaml
 patches:
   - increase_replicas.yaml
