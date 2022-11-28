@@ -11,4 +11,4 @@ spec:
     port: 80
     targetPort: 80
   selector:
-    app: demoapp011
+    app: demoapp01
