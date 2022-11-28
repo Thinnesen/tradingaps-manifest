@@ -8,7 +8,6 @@ spec:
 
     email: thinnesen00@gmail.com
     server: https://acme-v02.api.letsencrypt.org/directory
-    # STAGING! - til test af apps: https://acme-staging-v02.api.letsencrypt.org/directory
 
     privateKeySecretRef:
       name: example-issuer-account-key
