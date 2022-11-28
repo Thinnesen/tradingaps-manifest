@@ -8,4 +8,4 @@ spec:
     kind: Deployment
     name: production-website
   updatePolicy:
-    updateMode: "Auto"
+    updateMode: "Off"
