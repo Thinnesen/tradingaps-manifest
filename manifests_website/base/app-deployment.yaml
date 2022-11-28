@@ -5,7 +5,7 @@ metadata:
   labels:
     app: website-deployment
 spec:
-#  replicas: 1
+  revisionHistoryLimit: 1
   strategy:
     type: RollingUpdate
     rollingUpdate:
