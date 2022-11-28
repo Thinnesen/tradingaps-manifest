@@ -15,7 +15,3 @@ spec:
             name: website-service
             port: 
               number: 80
-#  tls:
-#  - hosts:
-#      - website.tradingaps.com
-#    secretName: website

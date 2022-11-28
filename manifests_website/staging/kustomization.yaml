@@ -7,4 +7,4 @@ namePrefix: staging-
 resources:
   - service-loadbalancer.yaml
 patches:
-  - app-deployment.yaml
+  - increase_hpa_count.yaml
