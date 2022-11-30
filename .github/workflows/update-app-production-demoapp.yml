@@ -1,4 +1,4 @@
-name: Repository Dispatch
+name: update-app-production-demoapp
 
 on:
   repository_dispatch:
