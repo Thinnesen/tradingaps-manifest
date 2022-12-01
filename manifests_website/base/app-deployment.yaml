@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: website
-          image: thinnesen/website-tradingaps:16
+          image: thinnesen/website-tradingaps:17
           resources:
             requests:
               memory: "15Mi"
