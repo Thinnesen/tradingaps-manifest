@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-demoapp
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:Thinnesen/tradingaps-manifest.git
+    targetRevision: HEAD
+    path: manifests_demoapp01/dev/
+    directory:
+      recurse: false
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production-demoapp
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

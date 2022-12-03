@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: production-demoapp01
 bases:
   - ../base
-namePrefix: production-
+namePrefix: dev-
 resources:
   - service-loadbalancer.yaml
 patches:
