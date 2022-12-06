@@ -5,7 +5,7 @@ bases:
   - ../base
 namePrefix: production-
 resources:
- # - ingress-resource.yaml
+  - ingress-resource.yaml
   - ssl-certificate.yaml
   - verticalpodautoscaler.yaml
 patches:
