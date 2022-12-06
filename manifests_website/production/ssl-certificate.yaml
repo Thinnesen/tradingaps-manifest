@@ -4,8 +4,6 @@ metadata:
   name: website
 spec:
   secretName: website
-  duration: 8760h
-  renewBefore: 240h
   issuerRef:
     name: acme-issuer
     kind: ClusterIssuer
