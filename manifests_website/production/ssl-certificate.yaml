@@ -4,7 +4,7 @@ metadata:
   name: website
 spec:
   secretName: website
-  duration: 90d
+  duration: 4320h
   renewBefore: 240h
   issuerRef:
     name: acme-issuer
