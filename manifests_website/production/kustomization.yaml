@@ -5,9 +5,9 @@ bases:
   - ../base
 namePrefix: production-
 resources:
-  - ingress-resource.yaml
-  - ssl-certificate.yaml
-  - verticalpodautoscaler.yaml
+#  - ingress-resource.yaml
+#  - ssl-certificate.yaml
+#  - verticalpodautoscaler.yaml
 patches:
   - increase_hpa_count.yaml
 
