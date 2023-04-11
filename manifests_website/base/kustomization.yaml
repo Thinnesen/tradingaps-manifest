@@ -5,7 +5,7 @@ resources:
   - app-deployment.yaml
   - service.yaml
   - namespace.yaml
-  - horizontalpodautoscaler.yaml
+#  - horizontalpodautoscaler.yaml
 
 commonLabels:
   owner: tradingaps
