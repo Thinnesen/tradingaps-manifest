@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: website
-          image: nginx:latest
+          image: thinnesen/website-tradingaps:23
           resources:
             requests:
               memory: "15Mi"
